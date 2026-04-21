@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sthembiso's Manifesto of Making Money</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e6e9;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.5;
+            color: #1e2a2e;
+            padding: 40px 20px;
+        }
+
+        /* Book container */
+        .book {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Each page in print will be a new sheet */
+        .page {
+            padding: 60px 70px;
+            page-break-after: always;
+            break-inside: avoid;
+            background: white;
+        }
+
+        /* Cover page special */
+        .cover {
+            background: #0a1c1f;
+            color: #e9c46a;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 90vh;
+        }
+        .cover h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .cover .sub {
+            font-size: 22px;
+            color: #f4a261;
+            margin-bottom: 60px;
+            font-style: italic;
+        }
+        .cover .rule {
+            font-size: 20px;
+            border-top: 2px solid #e9c46a;
+            display: inline-block;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0a1c1f;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 25px 0 15px 0;
+            color: #b85c1a;
+            border-left: 4px solid #e9c46a;
+            padding-left: 15px;
+        }
+        h3 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: #2c3e2f;
+        }
+        .chapter-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #0a1c1f;
+            border-bottom: 2px solid #e9c46a;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* TOC styling */
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 16px;
+            border-bottom: 1px dotted #ccc;
+        }
+        .toc-chap {
+            font-weight: bold;
+        }
+
+        /* Summary table */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            vertical-align: top;
+            text-align: left;
+        }
+        .summary-table th {
+            background-color: #0a1c1f;
+            color: #e9c46a;
+        }
+
+        /* lists */
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .highlight {
+            background-color: #fef9e6;
+            padding: 15px;
+            border-left: 4px solid #e9c46a;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        /* print adjustments */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .page {
+                padding: 1.5cm;
+                page-break-after: always;
+            }
+            .cover {
+                min-height: 100vh;
+            }
+            .summary-table th, .summary-table td {
+                border-color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="book">
+
+    <!-- COVER PAGE -->
+    <div class="page cover">
+        <div>
+            <h1>STHEMBISO MKANSI'S MANIFESTO<br>OF MAKING MONEY</h1>
+            <div class="sub">Assets Put Money in Your Pocket.<br>Liabilities Cost You Money.</div>
+            <div class="rule">The Fundamental Rule of Getting Rich</div>
+            <p style="margin-top: 80px; font-size: 14px; color: #a0b3b0;">— Sthembiso Mkansi —</p>
+        </div>
+    </div>
+
+    <!-- INTRODUCTION PAGE -->
+    <div class="page">
+        <h1>Introduction</h1>
+        <p style="font-size: 18px; margin-bottom: 20px;"><strong>Before You Begin</strong></p>
+        <p>This is not a get-rich-quick guide. There are no lottery tickets hidden in these pages.</p>
+        <p>What you hold is a framework. A mindset. A set of rules that separate those who build lasting wealth from those who simply look rich.</p>
+        <p>The principle is simple: <strong>Assets make you money. Liabilities cost you money.</strong> The more assets you own that work while you sleep, the richer you become.</p>
+        <p>Yet most people spend their lives buying liabilities they mistake for assets. They finance cars that depreciate. They buy houses that drain their bank accounts. They chase status while ignoring cash flow.</p>
+        <p>The rich don't do this. And that's why they keep getting richer.</p>
+        <p>In this manifesto, I've documented 13 specific assets that wealthy individuals and companies use to build and preserve their fortunes. Some will be familiar. Others may surprise you.</p>
+        <p>Read this with an open mind. But more importantly — act on what you learn.</p>
+        <p class="highlight">Knowledge without action is just entertainment.</p>
+        <p style="margin-top: 30px;"><strong>— Sthembiso Mkansi</strong></p>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="page">
+        <h1>Table of Contents</h1>
+        <div style="margin-top: 30px;">
+            <div class="toc-item"><span class="toc-chap">1. Cash</span><span>Liquidity & Opportunity</span></div>
+            <div class="toc-item"><span class="toc-chap">2. Real Estate</span><span>Rent & Appreciation</span></div>
+            <div class="toc-item"><span class="toc-chap">3. Bonds</span><span>Government & Corporate Debt</span></div>
+            <div class="toc-item"><span class="toc-chap">4. Stocks</span><span>Owning Public Companies</span></div>
+            <div class="toc-item"><span class="toc-chap">5. Mutual & Index Funds</span><span>Diversified Growth</span></div>
+            <div class="toc-item"><span class="toc-chap">6. Equipment</span><span>Tools That Generate Income</span></div>
+            <div class="toc-item"><span class="toc-chap">7. Brand & Goodwill</span><span>Intangible Power</span></div>
+            <div class="toc-item"><span class="toc-chap">8. People</span><span>Your Most Valuable Resource</span></div>
+            <div class="toc-item"><span class="toc-chap">9. Raw Materials & Commodities</span><span>Tangible Wealth</span></div>
+            <div class="toc-item"><span class="toc-chap">10. Books, Songs & Digital Products</span><span>Scalable Information</span></div>
+            <div class="toc-item"><span class="toc-chap">11. Royalties</span><span>Passive Income from IP</span></div>
+            <div class="toc-item"><span class="toc-chap">12. Unique Rights</span><span>Legal & Geographical Advantages</span></div>
+            <div class="toc-item"><span class="toc-chap">13. First Mover Advantage</span><span>Innovation as an Asset</span></div>
+        </div>
+        <div class="highlight" style="margin-top: 40px;">
+            <p><strong>Summary & Final Words</strong> — at the end of this book.</p>
+        </div>
+    </div>
+
+    <!-- CHAPTER 1 -->
+    <div class="page">
+        <div class="chapter-title">1. Cash</div>
+        <p>Straight up — cash in a bank deposit earns you interest. The downside? Most bank interest doesn't keep up with inflation. But cash remains a priority.</p>
+        <p>Apple holds over $150 billion in cash reserves. Why?</p>
+        <p><strong>Two reasons:</strong></p>
+        <ul>
+            <li><strong>Opportunity access</strong> — The deal of your dreams means nothing if you can't afford it.</li>
+            <li><strong>Higher returns from cash deals</strong> — People offer better pricing for cash, and peer-to-peer lending can yield 7–20% (while the bank offers under 1%).</li>
+        </ul>
+        <div class="highlight">⚠️ Warning: If something seems too good to be true, it probably is. Maintain a rational mind.</div>
+    </div>
+
+    <!-- CHAPTER 2 -->
+    <div class="page">
+        <div class="chapter-title">2. Real Estate</div>
+        <p><strong>Two reasons to love it:</strong></p>
+        <ul>
+            <li><strong>Rent payments</strong> — Monthly income with minimal work. Short-term rentals offer higher yields but less passivity.</li>
+            <li><strong>Appreciation</strong> — Population grows. Demand increases. Property prices rise.</li>
+        </ul>
+        <p><strong>Types of real estate assets:</strong> Residential, Office, Commercial, Land.</p>
+        <div class="highlight">Critical note: The house you live in is NOT an asset. It's a liability. It costs you money and puts nothing in your pocket.</div>
+    </div>
+
+    <!-- CHAPTER 3 -->
+    <div class="page"><div class="chapter-title">3. Bonds</div><p>When governments or businesses need cash, they issue bonds — promising to pay investors a fixed amount monthly.</p><p><strong>Safety vs. Reward:</strong> Bonds are super safe (government-backed), which means low reward — typically around 3% yearly returns.</p><p><strong>How to buy:</strong> Directly from the treasury department or through a brokerage firm.</p></div>
+
+    <!-- CHAPTER 4 -->
+    <div class="page"><div class="chapter-title">4. Stocks</div><p>Stocks allow you to own a percentage of a publicly traded business. If a company issues 10 million shares and you own 1 million — you're a 10% owner.</p><p>This financial breakthrough lets average people own stakes in the world's most lucrative companies with very low entry barriers.</p></div>
+
+    <!-- CHAPTER 5 -->
+    <div class="page"><div class="chapter-title">5. Mutual & Index Funds</div><p>Instead of buying single companies, index funds bundle many companies together. You're buying the entire basket.</p><p><strong>Why better?</strong> Diversification = safety.</p><p><strong>The S&P 500</strong> brings together the 500 best-performing companies. When a company falls from the top 500, it gets replaced.</p><p><strong>Average annualized return over 90 years: 9.8%</strong> — Index funds belong in every long-term wealth-building portfolio.</p></div>
+
+    <!-- CHAPTER 6 -->
+    <div class="page"><div class="chapter-title">6. Equipment</div><p>Anything that generates money or helps you make money faster is an asset. Farmer → Tractor. Programmer → Laptop. Uber driver → Car.</p><p><strong>But</strong> — unless your income directly depends on that car, buying a new one is a liability. People confuse these constantly. You don't need the most expensive laptop to watch YouTube.</p></div>
+
+    <!-- CHAPTER 7 -->
+    <div class="page"><div class="chapter-title">7. Brand & Goodwill</div><p><strong>Brand</strong> — The footprint a company leaves in consumers' minds. <strong>Goodwill</strong> — Emotional affection.</p><p>A simple black t-shirt costs under $2. Put a Disney logo on it — worth $10.99. Kim Kardashian made over $1 million per minute from her Kimoji app.</p></div>
+
+    <!-- CHAPTER 8 -->
+    <div class="page"><div class="chapter-title">8. People</div><p>Companies aren't actually real. They're names, ideas, and innovation — all created by people. Replacing Steve Jobs with the former Pepsi CEO nearly bankrupted Apple.</p><p><strong>Aquihire</strong> — When bigger companies acquire startups just to bring the people in-house. The harder someone is to replace, the more valuable an asset they become.</p></div>
+
+    <!-- CHAPTER 9 -->
+    <div class="page"><div class="chapter-title">9. Raw Materials & Commodities</div><p>Buy when cheap. Hold. Sell when in high demand. Applies to: currency, oil, gold, crypto, luxury cars, art.</p><p><strong>Gold</strong> — Up 221% over 15 years. <strong>Art</strong> — Has outperformed the S&P 500 for 20 years. While your car costs you money, rare collectibles appreciate.</p><div class="highlight">Never invest in things you do not understand. This is one of the most important rules of money.</div></div>
+
+    <!-- CHAPTER 10 -->
+    <div class="page"><div class="chapter-title">10. Books, Songs & Digital Products</div><p>Information is infinitely scalable. Write the book once — sell it a million times.</p><p><strong>Music example:</strong> Psy made over $10 million from "Gangnam Style". Mariah Carey makes $500,000 every year from "All I Want For Christmas" — over $60 million to date.</p></div>
+
+    <!-- CHAPTER 11 -->
+    <div class="page"><div class="chapter-title">11. Royalties</div><p>You write a book. A studio buys the rights. You get a portion of everything generated.</p><p><strong>Friends example:</strong> The cast still earns $10–20 million per year each from reruns (syndication). <strong>George Lucas</strong> kept merchandising rights to Star Wars → over $3 billion from toys. Disney bought Lucasfilms for $4 billion and recouped in 6 years.</p></div>
+
+    <!-- CHAPTER 12 -->
+    <div class="page"><div class="chapter-title">12. Unique Rights</div><p>Sometimes parties have an unfair competitive advantage — that's an asset. Examples: US Indian Gaming Regulatory Act (gambling rights), churches worldwide (tax-exempt but run as businesses), art museums, fraternal organizations.</p><p>Any specialty license or geographical advantage that gives you a marketplace edge is an asset.</p></div>
+
+    <!-- CHAPTER 13 -->
+    <div class="page"><div class="chapter-title">13. First Mover Advantage</div><p>Commercial innovation is an asset. Apple's App Store, Netflix's streaming pivot, Airbnb disrupting hotels, Spotify changing music consumption.</p><p>It took years for competitors to catch up. By then, the first movers had already won.</p></div>
+
+    <!-- SUMMARY PAGE -->
+    <div class="page">
+        <h1>Summary — The 13 Assets at a Glance</h1>
+        <table class="summary-table">
+            <thead>
+                <tr><th>#</th><th>Asset</th><th>Key Takeaway</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Cash</td><td>Liquidity = opportunity. Access deals & lend at higher rates.</td></tr>
+                <tr><td>2</td><td>Real Estate</td><td>Rent + appreciation. Your home is NOT an asset.</td></tr>
+                <tr><td>3</td><td>Bonds</td><td>Safe but low return (~3%). Government-backed.</td></tr>
+                <tr><td>4</td><td>Stocks</td><td>Own percentages of public companies. Low entry barrier.</td></tr>
+                <tr><td>5</td><td>Index Funds</td><td>Diversified safety. S&P 500 averaged 9.8% over 90 years.</td></tr>
+                <tr><td>6</td><td>Equipment</td><td>Income-generating tools only. Luxury items are liabilities.</td></tr>
+                <tr><td>7</td><td>Brand/Goodwill</td><td>Intangible value. A $2 shirt becomes $11 with a logo.</td></tr>
+                <tr><td>8</td><td>People</td><td>The hardest to replace = most valuable. Aquihire exists.</td></tr>
+                <tr><td>9</td><td>Commodities</td><td>Buy low, sell high. Art beat the S&P for 20 years.</td></tr>
+                <tr><td>10</td><td>Digital Products</td><td>Infinitely scalable. Write once, sell millions of times.</td></tr>
+                <tr><td>11</td><td>Royalties</td><td>Passive income from intellectual property. Lucas made billions.</td></tr>
+                <tr><td>12</td><td>Unique Rights</td><td>Legal/geographical advantages = unfair competitive edge.</td></tr>
+                <tr><td>13</td><td>First Mover</td><td>Innovate commercially. Capture market share before others.</td></tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 40px; text-align: center; border-top: 2px solid #e9c46a; padding-top: 30px;">
+            <p style="font-size: 20px;"><strong>Assets put money in your pocket. Liabilities cost you money.</strong></p>
+            <p>The rich aren't smarter than you. They simply own more assets.</p>
+            <p>Start small. Buy one asset. Then another. Let them compound.</p>
+            <p style="margin-top: 30px;">— <strong>Sthembiso Mkansi</strong> —</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
