@@ -8,7 +8,7 @@ This manifesto documents **13 assets** that wealthy individuals and companies us
 
 ### View the Manifesto
 
-- 📄 [Read Online https://sthembisomkansi.github.io/Sthembiso-Mkansi-s-Manifesto/))](Sthembiso Mkansi's manifesto.html
+- 📄 Read Online https://sthembisomkansi.github.io/Sthembiso-Mkansi-s-Manifesto/ 
 - 📑 [Download PDF](Sthembiso's Manifesto of Making Money.pdf)
 
 ### The 13 Assets
